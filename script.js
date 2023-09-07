@@ -77,7 +77,11 @@ class Calculator{
 
     updateDisplay() {
         this.currentOperandTextElement.innerHTML = this.getDisplayNumber(this.currentOperand);
-        this.preivousOperandTextElement.innerHTML = this.getDisplayNumber(this.preivousOperand);
+        if(this.operation != null) {
+            this.preivousOperandTextElement.innerHTML = this.getDisplayNumber(this.preivousOperand).concat(" ").concat(this.operation);
+        } else {
+            this.preivousOperandTextElement.innerHTML = "";
+        }
     }
 
     getDisplayNumber(number) {
