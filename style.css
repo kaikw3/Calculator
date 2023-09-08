@@ -15,6 +15,7 @@ body{
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(6, 100px);
+    margin-top: 5%;
 }
 .grid button{
     cursor: pointer;
